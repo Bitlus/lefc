@@ -49,7 +49,7 @@ int main(int argc, char **argv) {
     /* Handling arguments. */
     switch (argc) {
         case 1:
-            fprintf(stderr, "%s: No input file aruguement.", argv[0]);
+            fprintf(stderr, "%s: No input file aruguement.\n", argv[0]);
             return 1;
             break;
         case 2:
@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
     /* Opening file, and displaying error if unable to open. */
     src = fopen(argv[file_index], "r");
     if (src == NULL) {
-        fprintf(stderr, "%s: Unable to open file.", argv[0]);
+        fprintf(stderr, "%s: Unable to open file.\n", argv[0]);
         return 1;
     }
     
