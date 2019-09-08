@@ -60,6 +60,7 @@ int main(int argc, char **argv) {
             if (argv[1][1] == 'w') {
                 to_windows_flag = 1;
             }
+            break;
     }
     
     /* Opening file, and displaying error if unable to open. */
